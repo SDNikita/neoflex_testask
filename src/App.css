@@ -1,0 +1,9 @@
+.imgHead{
+    width: 50px;
+    height: auto;
+}
+.Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

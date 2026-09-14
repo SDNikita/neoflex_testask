@@ -3,14 +3,23 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 import './App.css'
+import reproach from './assets/images/reproach.png'
+import like from './assets/images/like.png'
+
 
 function App() {
 
   return (
     <>
      {/* head*/}
-     <section>
-       <p> QPICK</p>
+     <section className='Head'>
+        <div>
+          <p> QPICK</p>
+        </div>
+        <div>
+          <img className='imgHead' src={like} alt = "Отложить"/>
+          <img className='imgHead' src={reproach} alt = "Корзина"/>
+        </div>
      </section>
 
       {/*наушниками*/}
