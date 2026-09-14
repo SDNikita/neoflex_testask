@@ -12,7 +12,7 @@ function App() {
   return (
     <>
      {/* head*/}
-     <section className='Head'>
+     <header className='Head'>
         <div>
           <p> QPICK</p>
         </div>
@@ -20,21 +20,22 @@ function App() {
           <img className='imgHead' src={like} alt = "Отложить"/>
           <img className='imgHead' src={reproach} alt = "Корзина"/>
         </div>
-     </section>
+     </header>
 
+    <main>
       {/*наушниками*/}
       <section>
       </section>
 
       {/*Беспроводные наушниками*/}
-
       <section>
-
       </section>
+    </main>
+      
     {/* Footer*/}
-      <section>
+      <footer>
 
-      </section>
+      </footer>
     </>
   )
 }
