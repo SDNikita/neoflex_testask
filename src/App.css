@@ -27,6 +27,10 @@ body,
 
 /* Хедер */
 .imgHead{
+    display: flex;
+    gap: 20px;
+}
+.imgHead img{
     max-width: 23px;
     height: auto;
 }
@@ -37,6 +41,7 @@ body,
     justify-content: space-between;
     align-items: center;
 }
+
 /* футер */
 .foot{
     max-height: 150px;

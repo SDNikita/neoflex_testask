@@ -9,10 +9,10 @@ function Header() {
                 <p>QPICK</p>
             </div>
 
-            <div>
-                <img className="imgHead" src={like} alt="Отложить"/>
+            <div className='imgHead'>
+                <img src={like} alt="Отложить"/>
 
-                <img className="imgHead" src={reproach} alt="Корзина"/>
+                <img src={reproach} alt="Корзина"/>
             </div>
 
         </header>
