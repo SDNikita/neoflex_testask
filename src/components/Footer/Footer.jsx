@@ -18,13 +18,13 @@ function Footer(){
                 <a href="#">Контакты</a>
             </div>
 
-            <div>
+            <div className='footerTextLan'>
                 <a href="#">Условия сервиса</a>
-                <br/>
-                <img className = 'imgFoot' src={world} alt='language'/>
-                <span className="active">Рус</span>
-                <span>Eng</span>
-
+                <div className='footLan'>
+                    <img className = 'imgFoot' src={world} alt='language'/>
+                    <span className="active">Рус</span>
+                    <span>Eng</span>
+                </div>
             </div>
 
             <div className='footerSocials'>

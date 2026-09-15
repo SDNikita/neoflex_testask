@@ -5,6 +5,9 @@ import Footer from '../../components/Footer/Footer';
 function Home(){
     return(
         <>
+        <div className="page">
+
+        
         <Header/>
             <main>
                 <section>
@@ -15,6 +18,7 @@ function Home(){
                 </section>
             </main>
         <Footer/>
+        </div>
         </>
     )
 }
