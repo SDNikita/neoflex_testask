@@ -15,13 +15,24 @@
 
 .foot{
     max-width: 1110px;
+    max-height: 150px;
+
     margin: 0 auto;
+    padding: 30px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px 16px 0 0;
 }
 .imgFoot{
     max-width: 30px;
     height: auto;
+}
+.footerLogo{
+    margin: 0;
+    font-size: 25
 }

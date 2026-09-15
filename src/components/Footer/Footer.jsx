@@ -7,13 +7,14 @@ import WA from '../../assets/images/Whatsapp.svg'
 function Footer(){
     return(
         <footer className="foot">
-            <div>
-                <h3>QPICK</h3>
+            <div className='footerLogo'>
+            {/* добавить якорь на страницу */}
+                <p>QPICK</p>
             </div>
 
             <div>
-                <a href="#">Избранное</a>
-                <a href="#">Корзина</a>
+                <a href="#">Избранное</a> <br/>
+                <a href="#">Корзина</a><br/>
                 <a href="#">Контакты</a>
             </div>
 
@@ -21,12 +22,12 @@ function Footer(){
                 <a href="#">Условия сервиса</a>
                 <br/>
                 <img className = 'imgFoot' src={world} alt='language'/>
-                <p>Рус</p>
-                <p>Eng</p>
+                <span className="active">Рус</span>
+                <span>Eng</span>
 
             </div>
 
-            <div>
+            <div className='footerSocials'>
                 <a href='https://vk.ru/id421460447'>
                     <img className = 'imgFoot' src={VK} alt='language'/>   
                 </a>
