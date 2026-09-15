@@ -7,12 +7,12 @@ import WA from '../../assets/images/Whatsapp.svg'
 function Footer(){
     return(
         <footer className="foot">
-            <div className='footerLogo'>
+            <div className='Logo'>
             {/* добавить якорь на страницу */}
                 <p>QPICK</p>
             </div>
 
-            <div>
+            <div className='footerText'>
                 <a href="#">Избранное</a> <br/>
                 <a href="#">Корзина</a><br/>
                 <a href="#">Контакты</a>

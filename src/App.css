@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Хедер */
 .imgHead{
     max-width: 23px;
     height: auto;
@@ -12,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
 }
-
+/* футер */
 .foot{
     max-width: 1110px;
     max-height: 150px;
@@ -32,7 +36,17 @@
     max-width: 30px;
     height: auto;
 }
-.footerLogo{
+.Logo{
     margin: 0;
-    font-size: 25
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25;
+    font-weight: 700;   
+}
+
+.footerText{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;  
+   font-size: 17;
+   color: brown;
 }

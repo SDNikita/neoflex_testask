@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="Head">
 
-            <div>
+            <div className='Logo'>
                 <p>QPICK</p>
             </div>
 
