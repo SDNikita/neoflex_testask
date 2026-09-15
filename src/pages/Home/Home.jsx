@@ -14,7 +14,7 @@ function Home(){
                     <h2>Беспроводные наушники</h2>
                 </section>
             </main>
-        {/* <Footer/> */}
+        <Footer/>
         </>
     )
 }

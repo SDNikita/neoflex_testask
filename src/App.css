@@ -1,9 +1,27 @@
 .imgHead{
-    width: 50px;
+    max-width: 23px;
     height: auto;
 }
 .Head {
+    max-width: 1110px;
+    height: 60px;
+
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.foot{
+    max-width: 1110px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgFoot{
+    max-width: 30px;
+    height: auto;
 }

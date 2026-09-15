@@ -1,5 +1,5 @@
-import like from '../../assets/images/like.png';
-import reproach from '../../assets/images/reproach.png';
+import like from '../../assets/images/like.svg';
+import reproach from '../../assets/images/reproach.svg';
 
 function Header() {
     return (
