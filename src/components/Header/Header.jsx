@@ -7,8 +7,10 @@ function Header() {
     return (
         <header className="Head">
 
-            <div className='Logo'>
-                <p>QPICK</p>
+            <div className='LogoHead'>
+                <Link to = "/" >
+                    <p>QPICK</p>
+                </Link>
             </div>
 
             <div className='imgHead'>

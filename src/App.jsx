@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Reproach from './pages/Home/Reproach';
 
-import './App.css';
+import './style/App.css'
+import './style/ReproachStyle.css'
+
 
 function App() {
     return (
