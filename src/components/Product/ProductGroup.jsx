@@ -4,23 +4,20 @@ function ProductGroup({title,products}){
         <section className="product-group">
             <h2>{title}</h2>
 
-            <div>
-                {products.map((products)=>(
-                    <div key = {products.id}>
-                        <div>
-                            <img src ={products.img} alt ={products.title} />
+            <div className="products">
+                {products.map((product)=>(
+                    <div className = "productCard" key = {product.id}>
+                        <div >
+                            <img src ={product.img} alt ={product.title} />
                         </div>
 
-                        <div>
-                            <p>{products.title}</p>
-                            <p>{products.price}</p>
+                        <div className="productTop">
+                            <p>{product.title}</p>
+                            <p>{product.price}</p>
                         </div>
 
-                        <div>
-                            <p>{products.rate}</p>
-                        </div>
-
-                        <div>
+                         <div className="productBottom">
+                            <p>{product.rate}</p>
                             <button>Купить</button>
                         </div>
                     </div>
