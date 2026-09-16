@@ -14,7 +14,6 @@ function Home(){
             <main>
                 <ProductGroup title = "Наушники" products = {headphones}/>
                 <ProductGroup title = "Беспроводные Наушники" products = {WirelessHeadphones}/>
-
             </main>
         <Footer/>
         </div>

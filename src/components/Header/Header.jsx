@@ -1,6 +1,8 @@
 import like from '../../assets/images/like.svg';
 import reproach from '../../assets/images/reproach.svg';
 
+import { Link } from 'react-router-dom';
+
 function Header() {
     return (
         <header className="Head">
@@ -10,9 +12,12 @@ function Header() {
             </div>
 
             <div className='imgHead'>
-                <img src={like} alt="Отложить"/>
+                    <img src={like} alt="Отложить"/>
 
-                <img src={reproach} alt="Корзина"/>
+                <Link  to="/reproachpage">
+                    <img src={reproach} alt="Корзина"/>
+                </Link>
+                
             </div>
 
         </header>

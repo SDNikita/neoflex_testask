@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
+import Reproach from './pages/Home/Reproach';
+
 import './App.css';
 
 function App() {
@@ -7,6 +9,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/reproachpage" element={<Reproach/>}/>
             </Routes>
         </BrowserRouter>
     );
