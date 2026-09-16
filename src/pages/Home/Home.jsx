@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer';
 import ProductGroup from '../../components/Product/ProductGroup';
 
 import headphones from '../../data/Headphones';
+import WirelessHeadphones from '../../data/WirelessHeadphones';
 function Home(){
     return(
         <>
@@ -12,6 +13,8 @@ function Home(){
         <Header/>
             <main>
                 <ProductGroup title = "Наушники" products = {headphones}/>
+                <ProductGroup title = "Беспроводные Наушники" products = {WirelessHeadphones}/>
+
             </main>
         <Footer/>
         </div>

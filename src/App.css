@@ -147,6 +147,7 @@ body,
    width: 100%;
     max-height: 240px;
     object-fit: contain;
+    margin-top: 15px;
     
 }
 .productTop{
@@ -178,6 +179,7 @@ body,
     margin-top: auto;
     transform: translateY(-10px);
 }
+/* ДОбавить на кнопкку подсветку при наведение мыши и анмацию нажатия */
 .productBottom button{
     border: none;
     background: none;
@@ -196,7 +198,6 @@ body,
 }
 .productRate{
     display: flex;
-    align-items: center;
     gap:10px;
 }
 
