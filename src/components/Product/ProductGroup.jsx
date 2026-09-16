@@ -1,4 +1,4 @@
-
+import star from '../../assets/images/rate.svg'
 function ProductGroup({title,products}){
     return(
         <section className="productGroup">
@@ -12,12 +12,15 @@ function ProductGroup({title,products}){
                         </div>
 
                         <div className="productTop">
-                            <p>{product.title}</p>
-                            <p>{product.price}</p>
+                            <p className="nameHeadphones">{product.title}</p>
+                            <p className="price">{product.price} ₽</p>
                         </div>
 
                          <div className="productBottom">
-                            <p>{product.rate}</p>
+                            <div className='productRate '>
+                                <img src ={star} alt = "rating"/>
+                                <p>{product.rate}</p> 
+                            </div>
                             <button>Купить</button>
                         </div>
                     </div>

@@ -118,9 +118,13 @@ body,
 
 /* Продукт  */
 .productGroup{
-    margin-bottom:40px;
-    
-    
+    margin-bottom:40px;  
+}
+.productGroup h2{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #838383;
 }
 .products{
     display: grid;
@@ -158,7 +162,7 @@ body,
 
 }
 .price{
-    margin-right: 20px;
+    margin: 0 20px 0 0;
     color: #ff8a00;
     font-weight: 600;
     font-size:17px;
@@ -171,7 +175,34 @@ body,
     font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     align-items: center;
-    
-
+    margin-top: auto;
+    transform: translateY(-10px);
+}
+.productBottom button{
+    border: none;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    padding-right: 15px;
+}
+.productRate p{
+    border: none;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #838383;
+}
+.productRate{
+    display: flex;
+    align-items: center;
+    gap:10px;
 }
 
+.productRate img{
+   max-height: 23px;
+   max-width: 21px;
+   padding-left: 15px;
+   
+}
