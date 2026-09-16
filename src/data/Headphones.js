@@ -25,3 +25,4 @@ const headphones = [
         rate: 4.5
     }
 ]
+export default headphones;

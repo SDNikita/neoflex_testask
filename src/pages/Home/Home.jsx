@@ -1,7 +1,8 @@
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import ProductGroup from '../../components/Product/ProductGroup';
 
-
+import headphones from '../../data/Headphones';
 function Home(){
     return(
         <>
@@ -10,12 +11,7 @@ function Home(){
         
         <Header/>
             <main>
-                <section>
-                    <h2>Наушники</h2>
-                </section>
-                <section>
-                    <h2>Беспроводные наушники</h2>
-                </section>
+                <ProductGroup title = "Наушники" products = {headphones}/>
             </main>
         <Footer/>
         </div>

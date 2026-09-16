@@ -25,3 +25,4 @@ const WirelessHeadphones = [
         rate: 4.7
     }
 ]
+export default WirelessHeadphones;
