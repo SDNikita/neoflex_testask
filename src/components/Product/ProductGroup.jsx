@@ -1,7 +1,7 @@
 
 function ProductGroup({title,products}){
     return(
-        <section className="product-group">
+        <section className="productGroup">
             <h2>{title}</h2>
 
             <div className="products">

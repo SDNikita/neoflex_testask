@@ -116,3 +116,38 @@ body,
     gap: 20px;
 }
 
+/* Продукт  */
+.productGroup{
+    margin-bottom:40px;
+    
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+.productCard{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    background-color:#ffffff;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.productCard img{
+    max-width: 220px;
+    max-height: 240px;
+    
+}
+.productTop{
+    display:flex  
+}
+.productBottom{
+    display:flex     
+}
+
