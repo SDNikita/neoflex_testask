@@ -1,6 +1,6 @@
-import headphones1 from '../../assets/images/headheadphones1'
-import headphones2 from '../../assets/images/headheadphones2'
-import headphones3 from '../../assets/images/headheadphones3'
+import headphones1 from '../assets/images/headphones1.png'
+import headphones2 from '../assets/images/headphones2.png'
+import headphones3 from '../assets/images/headphones3.png'
 
 const headphones = [
     {
