@@ -23,6 +23,27 @@ const headphones = [
         title:'Apple EarPods Pro',
         price:2327,
         rate: 4.5
+    },
+    {
+        id:4,
+        img:headphones1,
+        title:'Apple EarPods Pro',
+        price:2327,
+        rate: 4.5
+    },
+    {
+        id:5,
+        img:headphones2,
+        title:'Apple EarPods Pro',
+        price:2527,
+        rate: 4.5
+    },
+    {
+        id:6,
+        img:headphones3,
+        title:'Apple EarPods Pro',
+        price:2367,
+        rate: 4.7
     }
 ]
 export default headphones;
