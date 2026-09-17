@@ -161,3 +161,57 @@
     font-size: 17px;
     font-weight: 600;
 }
+
+.cartTotal{
+    width: 350px;
+    height: 120px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.totalTop{
+    height: 50px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.cartTotal button {
+    width: 100%;
+    height: 70px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #101010;
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 7px 15px rgba(0, 0, 0);
+
+    cursor: pointer;
+}
+
+.cartTotal button:hover {
+    opacity: 0.9;
+}
+.cartContent {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

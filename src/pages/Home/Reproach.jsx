@@ -10,14 +10,28 @@ function Reproach({cart}){
             <Header cart={cart}/>
             <main>
                 <h1>Корзина</h1>
-                <div className="cardProducts">
+                <div className="cartContent">
+                    <div className="cardProducts">
                     {cart.map(product => (
                     <ProductForBuy key={product.id} product={product}
                         increaseQuantity={() =>increaseQuantity(product.id, setCart)}
                         decreaseQuantity={() => decreaseQuantity(product.id, setCart)}/>
                     ))}
-
                 </div>
+                <div className="cartTotal">
+                    <div className="totalTop">
+                        <span>ИТОГО</span>
+                        <span>₽
+                            {cart.reduce((sum, product) =>
+                                sum + product.price * product.quantity,0)} 
+                        </span>
+                    </div>
+                    <button>
+                        Перейти к оформлению
+                    </button>
+                </div>
+                </div>
+                
             </main>
             <Footer/>
         </div>
