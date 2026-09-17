@@ -189,6 +189,9 @@ body,
     font-size: 17px;
     padding-right: 15px;
 }
+.productBottom button:hover{
+    color: #ff9900;
+}
 .productRate p{
     border: none;
     background: none;
