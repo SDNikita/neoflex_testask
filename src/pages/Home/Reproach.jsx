@@ -1,8 +1,10 @@
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import ProductForBuy from '../../components/Product/ProductForBuy'
+
 import increaseQuantity from '../../scripts/increaseQuantity';
 import decreaseQuantity from '../../scripts/decreaseQuantity';
+import deleteFromCart from '../../scripts/deleteFromCart';
 
 function Reproach({cart,setCart}){
     return(
@@ -15,7 +17,8 @@ function Reproach({cart,setCart}){
                     {cart.map(product => (
                     <ProductForBuy key={product.id} product={product}
                         increaseQuantity={() =>increaseQuantity(product.id, setCart)}
-                        decreaseQuantity={() => decreaseQuantity(product.id, setCart)}/>
+                        decreaseQuantity={() => decreaseQuantity(product.id, setCart)}
+                        deleteFromCart={() =>deleteFromCart(product.id, setCart)}/>
                     ))}
                 </div>
                 <div className="cartTotal">

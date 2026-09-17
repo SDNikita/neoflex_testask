@@ -1,5 +1,5 @@
 import deleteBut from '../../assets/images/delete.svg'
-function ProductForBuy({product, increaseQuantity, decreaseQuantity}){
+function ProductForBuy({product, increaseQuantity, decreaseQuantity,deleteFromCart}){
     return(
         <div className="cartCard">
             <img src={product.img}  className="cartProductImg" alt = {product.tittle}/>
@@ -9,7 +9,9 @@ function ProductForBuy({product, increaseQuantity, decreaseQuantity}){
                 <span>{product.price} ₽</span>
             </div>
             <div className='rightHalf'>
-                <img src= {deleteBut} alt = "delete" className="deleteProduct"/>
+                <button onClick={deleteFromCart}>
+                    <img src= {deleteBut} alt = "delete" className="deleteProduct"/>
+                </button>
                 <p className="cartPrice">
                     {product.price * product.quantity} ₽
                 </p>
