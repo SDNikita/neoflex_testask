@@ -3,7 +3,10 @@ import reproach from '../../assets/images/reproach.svg';
 
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({cart}) {
+    const cartCount = cart.reduce(
+        (sum, item)=>sum+item.quantity,0
+    );
     return (
         <header className="Head">
 
@@ -16,8 +19,10 @@ function Header() {
             <div className='imgHead'>
                     <img src={like} alt="Отложить"/>
 
-                <Link  to="/reproachpage">
+                <Link  to="/reproachpage"  className="cartIcon">
                     <img src={reproach} alt="Корзина"/>
+                     {cartCount > 0 && (
+                        <span className="cartCount"> {cartCount}</span>)}
                 </Link>
                 
             </div>

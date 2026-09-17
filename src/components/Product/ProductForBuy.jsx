@@ -1,21 +1,25 @@
-function ProductForBuy(product, increaseQuantity, decreaseQuantity){
+import deleteBut from '../../assets/images/delete.svg'
+function ProductForBuy({product, increaseQuantity, decreaseQuantity}){
     return(
         <div className="cartCard">
-            <img src={product.img} alt = {product.tittle}/>
+            <img src={product.img}  className="cartProductImg" alt = {product.tittle}/>
 
             <div className="cartInfo">
-                <p>{product.tittle}</p>
+                <p>{product.title}</p>
                 <span>{product.price} ₽</span>
             </div>
-
-            <div className="cartButton">
-                <button>-</button>
-                <span>{product.quantity}</span>
-                <button>+</button>
+            <div className='rightHalf'>
+                <img src= {deleteBut} alt = "delete" className="deleteProduct"/>
+                <p className="cartPrice">
+                    {product.price * product.quantity} ₽
+                </p>
             </div>
-            <p className="cartPrice">
-                {product.price * product.quantity} ₽
-            </p>
+            <div className="cartButton">
+                <button onClick={()=>decreaseQuantity(product.id)}>-</button>
+                <span>{product.quantity}</span>
+                <button onClick={() =>increaseQuantity(product.id)}>+</button>
+            </div>
+            
         </div>
     );
 }

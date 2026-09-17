@@ -1,5 +1,6 @@
 import star from '../../assets/images/rate.svg'
-function ProductGroup({title,products}){
+import addToCart from '../../scripts/addToCart';
+function ProductGroup({title,products, addToCart, setCart}){
     return(
         <section className="productGroup">
             <h2>{title}</h2>
@@ -21,7 +22,7 @@ function ProductGroup({title,products}){
                                 <img src ={star} alt = "rating"/>
                                 <p>{product.rate}</p> 
                             </div>
-                            <button>Купить</button>
+                            <button onClick={()=>addToCart(product,setCart)}>Купить</button>
                         </div>
                     </div>
                 ))}

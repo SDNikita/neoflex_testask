@@ -1,12 +1,23 @@
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import ProductForBuy from '../../components/Product/ProductForBuy'
+import increaseQuantity from '../../scripts/increaseQuantity';
+import decreaseQuantity from '../../scripts/decreaseQuantity';
 
-function Reproach(){
+function Reproach({cart}){
     return(
         <div className='ReproachPage'>
-            <Header/>
+            <Header cart={cart}/>
             <main>
-                <h1>Reproach</h1>
+                <h1>Корзина</h1>
+                <div className="cardProducts">
+                    {cart.map(product => (
+                    <ProductForBuy key={product.id} product={product}
+                        increaseQuantity={() =>increaseQuantity(product.id, setCart)}
+                        decreaseQuantity={() => decreaseQuantity(product.id, setCart)}/>
+                    ))}
+
+                </div>
             </main>
             <Footer/>
         </div>

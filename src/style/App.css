@@ -67,6 +67,7 @@ body,
     align-self: flex-start;
     
 }
+/* добавить якорь */
 .LogoFoot p{
     margin: 5px 0 0;
     font-family: 'Montserrat', sans-serif;
@@ -144,7 +145,7 @@ body,
 }
 
 .productCard img{
-   width: 100%;
+    width: 100%;
     max-height: 240px;
     object-fit: contain;
     margin-top: 15px;
@@ -206,4 +207,32 @@ body,
    max-width: 21px;
    padding-left: 15px;
    
+}
+
+.cartIcon {
+    position: relative;
+    display: inline-block;
+    color: blue;
+}
+
+.cartCount {
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #ffa500;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 11px;
+    font-weight: 600;
 }
