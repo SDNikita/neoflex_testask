@@ -4,7 +4,7 @@ import ProductForBuy from '../../components/Product/ProductForBuy'
 import increaseQuantity from '../../scripts/increaseQuantity';
 import decreaseQuantity from '../../scripts/decreaseQuantity';
 
-function Reproach({cart}){
+function Reproach({cart,setCart}){
     return(
         <div className='ReproachPage'>
             <Header cart={cart}/>

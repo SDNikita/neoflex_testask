@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home cart={cart} addToCart={addToCart} setCart={setCart}/>} />
-                <Route path="/reproachpage" element={<Reproach cart={cart}/>}/>
+                <Route path="/reproachpage" element={<Reproach cart={cart} setCart={setCart}/>}/>
             </Routes>
         </BrowserRouter>
     );
