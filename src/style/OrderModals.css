@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+.modalOverlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+
+.orderModal {
+    position: relative;
+
+    width: 450px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.orderModal h2 {
+    margin: 0 0 25px;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.modalClose {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.orderInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+}
+
+
+.orderInfo p {
+    margin: 0;
+}
+
+
+.orderInfo span {
+    font-weight: 600;
+}
+
+
+.orderModal input {
+    display: block;
+
+    width: 100%;
+    height: 45px;
+
+    margin-bottom: 15px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+.orderModal input:focus {
+    border-color: #ffce7f;
+}
+
+
+.orderButton {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #101010;
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.orderButton:hover {
+    opacity: 0.9;
+}
