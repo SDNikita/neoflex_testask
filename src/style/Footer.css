@@ -1,0 +1,74 @@
+/* футер */
+.foot{
+    max-height: 150px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px;
+    box-sizing: border-box;
+
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px 16px 0 0;
+}
+.imgFoot{
+    max-width: 30px;
+    height: 30px;
+}
+.Logo{
+    align-self: flex-start;
+    
+}
+/* добавить якорь */
+.LogoFoot p{
+    margin: 5px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footerText{
+    display: flex;
+    flex-direction: column;
+}
+.footerText a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+    font-size: 17;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footerTextLan{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTextLan a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;  
+    font-size: 17;
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 50px;
+}
+.footLan{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size:15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+}
+.footLan .active {
+    color: #ff9900;
+    font-weight: 700;
+}
+.footerSocials{
+    display: flex;
+    gap: 20px;
+}

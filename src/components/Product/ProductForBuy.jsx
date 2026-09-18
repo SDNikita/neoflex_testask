@@ -1,4 +1,5 @@
 import deleteBut from '../../assets/images/delete.svg'
+import '../../style/Product.css'
 function ProductForBuy({product, increaseQuantity, decreaseQuantity,deleteFromCart}){
     return(
         <div className="cartCard">

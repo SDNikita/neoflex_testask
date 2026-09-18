@@ -1,12 +1,16 @@
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import ProductForBuy from '../../components/Product/ProductForBuy'
+import OrderModal from '../../components/modelWindow/OrderModal'
 
 import increaseQuantity from '../../scripts/increaseQuantity';
 import decreaseQuantity from '../../scripts/decreaseQuantity';
 import deleteFromCart from '../../scripts/deleteFromCart';
 
+import { useState } from 'react';
+
 function Reproach({cart,setCart}){
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return(
         <div className='ReproachPage'>
             <Header cart={cart}/>
@@ -29,7 +33,7 @@ function Reproach({cart,setCart}){
                                 sum + product.price * product.quantity,0)} 
                         </span>
                     </div>
-                    <button>
+                    <button  onClick={() => setIsModalOpen(true)}>
                         Перейти к оформлению
                     </button>
                 </div>
@@ -37,6 +41,10 @@ function Reproach({cart,setCart}){
                 
             </main>
             <Footer/>
+            {isModalOpen && (
+                <OrderModal total={cart.reduce(
+                (sum, product) =>sum + product.price * product.quantity,0)} 
+                onClose={() => setIsModalOpen(false)}/>)}
         </div>
     );
 }

@@ -1,0 +1,16 @@
+/* Хедер */
+.imgHead{
+    display: flex;
+    gap: 20px;
+}
+.imgHead img{
+    max-width: 23px;
+    height: auto;
+}
+.Head {
+    height: 60px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

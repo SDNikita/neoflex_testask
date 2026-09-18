@@ -1,5 +1,7 @@
 import star from '../../assets/images/rate.svg'
 import addToCart from '../../scripts/addToCart';
+import '../../style/Product.css'
+
 function ProductGroup({title,products, addToCart, setCart}){
     return(
         <section className="productGroup">

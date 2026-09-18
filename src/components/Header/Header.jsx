@@ -1,5 +1,6 @@
 import like from '../../assets/images/like.svg';
 import reproach from '../../assets/images/reproach.svg';
+import '../../style/Header.css'
 
 import { Link } from 'react-router-dom';
 

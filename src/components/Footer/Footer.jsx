@@ -2,8 +2,9 @@ import world from '../../assets/images/world.svg'
 import TG from '../../assets/images/Telegram.svg'
 import VK from '../../assets/images/VK.svg'
 import WA from '../../assets/images/Whatsapp.svg'
+import '../../style/Footer.css'
 
-
+import { Link } from 'react-router-dom';
 function Footer(){
     return(
         <footer className="foot">
@@ -14,7 +15,7 @@ function Footer(){
 
             <div className='footerText'>
                 <a href="#">Избранное</a> <br/>
-                <a href="#">Корзина</a><br/>
+                <Link to="/reproachpage">Корзина</Link><br/>
                 <a href="#">Контакты</a>
             </div>
 
